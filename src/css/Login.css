@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.inputs_section {
+  width: 50%;
+  margin: 10% 18%;
+}
