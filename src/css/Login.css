@@ -7,5 +7,14 @@
 
 .inputs_section {
   width: 50%;
-  margin: 10% 18%;
+  padding: 10% 0px 5% 0;
+  margin: 5% auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: 1px solid lightblue;
+}
+
+#basic {
+  width: 80%;
 }
