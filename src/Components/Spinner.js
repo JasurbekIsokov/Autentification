@@ -1,7 +1,9 @@
 import { Spin } from "antd";
 
-export default () => (
+const Spinner = () => (
   <div className="example">
     <Spin />
   </div>
 );
+
+export default Spinner;

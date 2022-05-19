@@ -1,17 +1,20 @@
 import "antd/dist/antd.css";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
-// local
+// local Components
 import Demo from "./LoginPage";
+import Spinner from "./Spinner";
+import Susses from "./MainPage";
+
+// Local CSS
 import "../css/Spinner.css";
 import "../css/Login.css";
 
 const App = () => {
   return (
-    <div>
-      <div className="inputs_section">
-        <Demo />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Demo />
+    </BrowserRouter>
   );
 };
 
