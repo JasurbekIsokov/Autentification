@@ -1,5 +1,12 @@
-// import { Spin } from "antd";
+import { Space, Spin } from "antd";
 
-const Spinner = () => <div className="example">{/* <Spin /> */}</div>;
+const App = () => (
+  <Space size="middle">
+    <Spin size="small" />
+    <Spin />
+    <Spin size="large" />
+  </Space>
+);
 
-export default Spinner;
+// const {data} = await axios.get("...url//", {headers:{"Authorization":`Bearer ${token}`}})
+export default App;
