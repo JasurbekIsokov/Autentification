@@ -18,7 +18,9 @@ const Demo = () => {
           password: pass,
         }
       );
-      // console.log(data);
+      console.log(data);
+      localStorage.setItem("loginData", JSON.stringify(data));
+      window.location.reload("/susses");
     } catch (error) {
       alert(error.massage);
     }

@@ -14,13 +14,17 @@ import "../css/Spinner.css";
 import "../css/Login.css";
 
 const App = () => {
+  let data = JSON.parse(localStorage.getItem("loginData")) || null;
+
+  console.log(data);
+
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Demo />} />
-        <Route path="/Susses" element={<Susses />} />
+        <Route path="/" element={data ? <Susses /> : <Demo />} />
         <Route path="/load" element={<Spinner />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   );
