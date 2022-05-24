@@ -1,9 +1,5 @@
-import { Spin } from "antd";
+// import { Spin } from "antd";
 
-const Spinner = () => (
-  <div className="example">
-    <Spin />
-  </div>
-);
+const Spinner = () => <div className="example">{/* <Spin /> */}</div>;
 
 export default Spinner;
