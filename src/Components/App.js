@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Demo from "./LoginPage";
 import Spinner from "./Spinner";
 import Susses from "./MainPage";
+import Error from "./Error";
 
 // Local CSS
 import "../css/Spinner.css";
@@ -18,7 +19,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Demo />} />
         <Route path="/Susses" element={<Susses />} />
-        <Route path="load" element={<Spinner />} />
+        <Route path="/load" element={<Spinner />} />
+        <Route path="/error" element={<Error />} />
       </Routes>
     </Router>
   );
