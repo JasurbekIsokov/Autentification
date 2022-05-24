@@ -18,6 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Demo />} />
         <Route path="/Susses" element={<Susses />} />
+        <Route path="load" element={<Spinner />} />
       </Routes>
     </Router>
   );
